@@ -1,133 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Trabajo de Estadística - Tres Tipos de Datos</title>
-    <style>
-          body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #333;
-         }
-        h1, h2 {
-            text-align: center;
-            color: #000;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        h3 {
-            color: #2c3e50;
-            margin-top: 30px;
-            border-left: 5px solid #333;
-            padding-left: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        table, th, td {
-            border: 1px solid #000;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .contenedor {
-            max-width: 950px;
-            margin: auto;
-        }
-        .datos-brutos {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border: 1px dashed #999;
-            font-size: 12px;
-            margin-bottom: 20px;
-        }
-        .interpretacion {
-            background-color: #f0f7ff;
-            padding: 15px;
-            border: 1px solid #0056b3;
-            margin-bottom: 40px;
-        }
-        .seccion { margin-bottom: 60px; }
-    </style>
+    
 </head>
 <body>
 
-<div class="contenedor">
-    <h1>Reporte de Ejemplos Estadísticos (n=100)</h1>
+<div>
+    <div class="contenedor">
+    <h1 class="titulo">Reporte de Ejemplos Estadísticos (n=100)</h1>  
+    </div>
+    
     <p><strong>Nombre:</strong>Gael Garcia Azpeitia </p>
-    <p><strong>Materia:</strong> Estadística I</p>
+    <p><strong>Materia:</strong>Probabilidad y Estadística I</p>
 
     <div class="seccion">
-        <h2>Ejemplo 1: Datos Cuantitativos (Consumo de Agua)</h2>
+        <h2>Ejemplo 1: Número de mascotas por hogar en una unidad residencial</h2>
         <h3>Tabla de Frecuencias</h3>
+        
         <table>
             <thead>
                 <tr>
                     <th>Clase</th>
-                    <th>Límite Inferior</th>
-                    <th>Límite Superior</th>
-                    <th>Marca de Clase</th>
                     <th>Frecuencia (fa)</th>
                     <th>Porcentaje (fr)</th>
+                    <th>frecuencia acumulada (f)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>1</td><td>0.00</td><td>0.50</td><td>0.25</td><td>12</td><td>12%</td></tr>
-                <tr><td>2</td><td>0.50</td><td>1.00</td><td>0.75</td><td>18</td><td>18%</td></tr>
-                <tr><td>3</td><td>1.00</td><td>1.50</td><td>1.25</td><td>25</td><td>25%</td></tr>
-                <tr><td>4</td><td>1.50</td><td>2.00</td><td>1.75</td><td>20</td><td>20%</td></tr>
-                <tr><td>5</td><td>2.00</td><td>2.50</td><td>2.25</td><td>15</td><td>15%</td></tr>
-                <tr><td>6</td><td>2.50</td><td>3.00</td><td>2.75</td><td>10</td><td>10%</td></tr>
+                <tr><td>0</td><td>20</td><td>20</td><td>20</td></tr>
+                <tr><td>1</td><td>35</td><td>35</td><td>55</td></tr>
+                <tr><td>2</td><td>25</td><td>25</td><td>80</td></tr>
+                <tr><td>3</td><td>15</td><td>15</td><td>95</td></tr>
+                <tr><td>4</td><td>5</td><td>5</td><td>100</td></tr>
+               
             </tbody>
             <tr style="font-weight: bold;">
-                <td colspan="4">TOTAL</td><td>100</td><td>100%</td>
+                <td colspan="1">TOTAL</td><td>100</td><td>100%</td>
             </tr>
         </table>
+<div>
   <img
-  src="imagenes/barras.png"
+  src="imagenes/histogramag1.png"
   
-  width="150"
-  height="150" />
+  width="190"
+  height="190" />
   <img
-  src="imagenes/histograma.png"
+  src="imagenes/poligonog1 (1).png"
   
-  width="150"
-  height="150" />
+  width="190"
+  height="190" />
   <img
-  src="imagenes/ojiva.png"
+  src="imagenes/barrasg1.png"
   
-  width="150"
-  height="150" />
+  width="190"
+  height="190" />
   <img
-  src="imagenes/pastel1.png"
+  src="imagenes/ojivag1.png"
   
-  width="150"
-  height="150" />
+  width="190"
+  height="190" />
   <img
-  src="imagenes/plot1.png"
+  src="imagenes/pastelcafeg1.png"
   
-  width="150"
-  height="150" />
-  <img
-  src="imagenes/poligono1.png"
-  
-  width="150"
-  height="150" />
-         <span class="etiqueta-datos">Lista de los 100 datos ordenados (Litros):</span>
+  width="190"
+  height="190" /> 
+</div>
+
+
+        <span class="etiqueta-datos"> Lista de los 100 datos ordenados (Metros):</span>
         <div class="datos-brutos">
-            0.10, 0.12, 0.15, 0.18, 0.22, 0.25, 0.28, 0.31, 0.32, 0.32, 0.32, 0.32, 0.35, 0.38, 0.40, 0.42, 0.45, 0.48, 0.50, 0.52, 0.55, 0.58, 0.60, 0.62, 0.63, 0.64, 0.65, 0.65, 0.65, 0.65, 0.68, 0.70, 0.72, 0.75, 0.78, 0.80, 0.82, 0.84, 0.85, 0.86, 0.88, 0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.95, 0.95, 0.96, 0.97, 0.98, 0.98, 0.98, 0.99, 1.00, 1.02, 1.05, 1.08, 1.10, 1.12, 1.15, 1.18, 1.20, 1.22, 1.24, 1.25, 1.26, 1.27, 1.28, 1.29, 1.30, 1.31, 1.31, 1.31, 1.33, 1.35, 1.38, 1.40, 1.42, 1.44, 1.45, 1.46, 1.47, 1.48, 1.49, 1.50, 1.51, 1.52, 1.53, 1.54, 1.55, 1.56, 1.57, 1.58, 1.59, 1.60, 1.62, 1.64, 1.65.
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4
         </div>
         <div class="interpretacion">
-            <strong>Interpretación:</strong> La mayoría de los jóvenes (25%) consume entre 1.00 y 1.50 litros, siendo la tendencia principal. Solo un 10% consume niveles altos (más de 2.5L), mientras que el 12% consume lo mínimo.
+            <strong>Interpretación:</strong>El análisis de los datos obtenidos sobre el número de mascotas por hogar revela que la tenencia de animales es una práctica ampliamente extendida en la comunidad, destacando que el 35% de los hogares posee únicamente 1 mascota, siendo esta la cifra más frecuente (moda). Por otro lado, la frecuencia acumulada nos indica que el 80% de los residentes tiene 2 mascotas o menos, mientras que solo una pequeña minoría del 5% convive con 4 animales, dejando claro que, aunque la mayoría de la población (un 80% del total) ha integrado mascotas en su hogar, existe una marcada preferencia por mantener un número reducido de ellas.
         </div>
-    </div>
+    </div> 
 
     <div class="seccion">
         <h2>Ejemplo 2: Datos Continuos (Estatura en Metros)</h2>
@@ -142,50 +92,51 @@
                     <th>Marca de Clase</th>
                     <th>Frecuencia (fa)</th>
                     <th>Porcentaje (fr)</th>
+                    <th>frecuencia acumulada (f)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>1</td><td>1.40</td><td>1.50</td><td>1.45</td><td>8</td><td>8%</td></tr>
-                <tr><td>2</td><td>1.50</td><td>1.60</td><td>1.55</td><td>22</td><td>22%</td></tr>
-                <tr><td>3</td><td>1.60</td><td>1.70</td><td>1.65</td><td>35</td><td>35%</td></tr>
-                <tr><td>4</td><td>1.70</td><td>1.80</td><td>1.75</td><td>25</td><td>25%</td></tr>
-                <tr><td>5</td><td>1.80</td><td>1.90</td><td>1.85</td><td>10</td><td>10%</td></tr>
+                <tr><td>1</td><td>1.40</td><td>1.50</td><td>1.45</td><td>8</td><td>8%</td><td>8</td></tr>
+                <tr><td>2</td><td>1.50</td><td>1.60</td><td>1.55</td><td>22</td><td>22%</td><td>30</td></tr>
+                <tr><td>3</td><td>1.60</td><td>1.70</td><td>1.65</td><td>35</td><td>35%</td><td>65</td></tr>
+                <tr><td>4</td><td>1.70</td><td>1.80</td><td>1.75</td><td>25</td><td>25%</td><td>90</td></tr>
+                <tr><td>5</td><td>1.80</td><td>1.90</td><td>1.85</td><td>10</td><td>10%</td><td>100</td></tr>
             </tbody>
             <tr style="font-weight: bold;">
                 <td colspan="4">TOTAL</td><td>100</td><td>100%</td>
             </tr>
         </table>
-         <img
-  src="imagenes/barras_trans (1).png"
+        
+        
+  <img    
+  src="imagenes/histogramag2.png"
   
-  width="150"
-  height="150" />
+  width="190"
+  height="190" />
   <img
-  src="imagenes/histograma (1).png"
+  src="imagenes/poligonog2 (1).png"
   
-  width="150"
-  height="150" />
+  width="190"
+  height="190" />
   <img
-  src="imagenes/ojiva (1).png"
+  src="imagenes/barrasg2.png"
   
-  width="150"
-  height="150" />
+  width="190"
+  height="190" />
   <img
-  src="imagenes/pastel.png"
+  src="imagenes/ojivag2.png"
   
-  width="150"
-  height="150" />
+  width="190"
+  height="190" />
   <img
-  src="imagenes/plot.png"
+  src="imagenes/pastelg2 (1).png"
   
-  width="150"
-  height="150" />
-  <img
-  src="imagenes/poligono.png"
-  
-  width="150"
-  height="150" />
-        <span class="etiqueta-datos">Lista de los 100 datos ordenados (Metros):</span>
+  width="190"
+  height="190" />
+
+</div>
+        
+  <span class="etiqueta-datos"> Lista de los 100 datos ordenados (Metros):</span>
         <div class="datos-brutos">
             1.41, 1.42, 1.42, 1.43, 1.44, 1.45, 1.45, 1.46, 1.47, 1.48, 1.48, 1.49, 1.49, 1.49, 1.49, 1.51, 1.51, 1.52, 1.52, 1.53, 1.53, 1.54, 1.54, 1.55, 1.55, 1.55, 1.56, 1.56, 1.57, 1.57, 1.58, 1.58, 1.58, 1.59, 1.59, 1.59, 1.59, 1.59, 1.59, 1.59, 1.61, 1.61, 1.62, 1.62, 1.62, 1.63, 1.63, 1.63, 1.64, 1.64, 1.64, 1.64, 1.65, 1.65, 1.65, 1.65, 1.65, 1.66, 1.66, 1.66, 1.66, 1.67, 1.67, 1.67, 1.67, 1.68, 1.68, 1.68, 1.68, 1.68, 1.69, 1.69, 1.69, 1.69, 1.69, 1.69, 1.69, 1.69, 1.69, 1.69, 1.71, 1.71, 1.72, 1.72, 1.73, 1.73, 1.74, 1.74, 1.75, 1.75, 1.76, 1.76, 1.77, 1.77, 1.78, 1.78, 1.79, 1.79, 1.79, 1.79.
         </div>
@@ -201,61 +152,61 @@
         <table>
             <thead>
                 <tr>
-                    <th>Categoría</th>
+                    <th>Clase</th>
                     <th colspan="3">Descripción</th>
                     <th>Frecuencia (fa)</th>
                     <th>Porcentaje (fr)</th>
+                    <th>frecuencia acumulada (f)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Fútbol</td><td colspan="3">Deporte de conjunto</td><td>45</td><td>45%</td></tr>
-                <tr><td>Básquetbol</td><td colspan="3">Deporte de conjunto</td><td>20</td><td>20%</td></tr>
-                <tr><td>Voleibol</td><td colspan="3">Deporte de conjunto</td><td>15</td><td>15%</td></tr>
-                <tr><td>Natación</td><td colspan="3">Deporte individual</td><td>12</td><td>12%</td></tr>
-                <tr><td>Otros</td><td colspan="3">Varios deportes</td><td>8</td><td>8%</td></tr>
+                <tr><td>Fútbol</td><td colspan="3">Deporte de conjunto</td><td>45</td><td>45%</td><td>45</td></tr>
+                <tr><td>Básquetbol</td><td colspan="3">Deporte de conjunto</td><td>20</td><td>20%</td><td>65</td></tr>
+                <tr><td>Voleibol</td><td colspan="3">Deporte de conjunto</td><td>15</td><td>15%</td><td>80</td></tr>
+                <tr><td>Natación</td><td colspan="3">Deporte individual</td><td>12</td><td>12%</td><td>92</td></tr>
+                <tr><td>Otros</td><td colspan="3">Varios deportes</td><td>8</td><td>8%</td><td>100</td></tr>
             </tbody>
             <tr style="font-weight: bold;">
                 <td colspan="4">TOTAL</td><td>100</td><td>100%</td>
             </tr>
         </table>
-        <img
-  src="imagenes/barras3.png"
-  
-  width="150"
-  height="150" />
+        
+ <div>
+    <img
+  src="imagenes/histogramag3.png"
+  width="190"
+  height="190" />
+
   <img
-  src="imagenes/histograma3.png"
-  
-  width="150"
-  height="150" />
+  src="imagenes/poligonog3 (1).png"
+  width="190"
+  height="190" />
+
   <img
-  src="imagenes/ojiva3.png"
-  
-  width="150"
-  height="150" />
+  src="imagenes/barrasg3.png"
+  width="190"
+  height="190" />
+
   <img
-  src="imagenes/pastel3.png"
-  
-  width="150"
-  height="150" />
+  src="imagenes/ojivag3.png"
+  width="190"
+  height="190" />
+
   <img
-  src="imagenes/plot3.png"
-  
-  width="150"
-  height="150" />
-  <img
-  src="imagenes/poligono3.png"
-  
-  width="150"
-  height="150" />
+  src="imagenes/pastelg3 (1).png"
+  width="190"
+  height="190" />
+
+  <div></div>
         
         <span class="etiqueta-datos">Lista de los 100 datos registrados (Categorías):</span>
         <div class="datos-brutos">
-            Fútbol (x50): [Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol], <br>
-            Básquetbol (x30): [Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol,
-        
+           Fútbol (45): Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, Fútbol, 
+           Básquetbol (20): Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, Básquetbol, 
+           Voleibol (15): Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, Voleibol, 
+           Natación (12): Natación, Natación, Natación, Natación, Natación, Natación, Natación, Natación, Natación, Natación, Natación, Natación, Otros (8): Otros, Otros, Otros, Otros, Otros, Otros, Otros, Otros.
             <div class="interpretacion">
-            <strong>Interpretación:</strong> El fútbol es el deporte dominante con casi la mitad de las preferencias (45%). Los deportes individuales como la natación tienen la menor participación con solo un 12%.
+            <strong>Interpretación:</strong> se entrevistaron a 100 jovenes sobre cual era su deporte favorito obteniento los resultados de la tabla, siendo futbol el mas preferido
         </div>
     </div>
 
@@ -264,10 +215,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
